@@ -4,23 +4,46 @@ author: "Frederico Fonseca Ribeiro"
 format: pdf
 ---
 
-## Quarto
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+# Questão 1
+# a) 
+$$
+UMg_1 = \frac{\partial u}{\partial x_1} = x_2
+$$
+De forma semelhante, , encontramos a utilidade maginal de $x_2$ e temos que a $TMgS = \frac{UMg_1}{UMg_2} = \frac{x_2}{x_1}$
 
-## Running Code
+# Questão 2
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+# Questão 3
 
-```{r}
-1 + 1
-```
+# Questão 4
 
-You can add options to executable code like this 
+# Questão 5
+## Cobb-Douglas
 
-```{r}
-#| echo: false
-2 * 2
-```
+## CES
 
-The `echo: false` option disables the printing of code (only output is displayed).
+
+
+# Questão 6
+
+# Questão 7
+
+# Questão 8
+
+# Questão 9
+
+# Questão 10
+
+# Questão 11
+
+# Questão 12 
+
+# Questão 13
+
+# Questão 14
+
+# Questão 15
+
+
+
