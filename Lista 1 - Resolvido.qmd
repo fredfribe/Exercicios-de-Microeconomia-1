@@ -1,7 +1,14 @@
 ---
 title: "Microeconomia 1 (Lista 1)"
 author: "Frederico Fonseca Ribeiro"
-format: pdf
+format: 
+    pdf: 
+     include-in-header:  
+        - text: |
+            \usepackage{physics}
+            \newcommand{\Lagr}{\mathcal{L}}
+crossref:
+  eq-prefix: Equação
 ---
 
 # Questão 1
@@ -73,8 +80,61 @@ p_3 \left(\frac{\beta p_1w}{(p_1+p_2+p_3)p_3}\right) \\
 
 # Questão 4
 
+Provando homogeneidade de grau zero:
+\begin{align}
+x_1(kp, kw) &= \frac{kp_2}{kp_3} = \frac{p_2}{p_3} = x_1(p,w) \\
+x_2(kp, kw) &=- \frac{kp_1}{kp_3} = - \frac{p_1}{p_3} = x_2(p,w) \\
+x_3(kp, kw) &= \frac{kw}{kp_3} = \frac{w}{p_3} = x_3(p,w)
+\end{align}
+Provando Lei de Walras:
+
+$$
+p_1 \left(\frac{p_2}{p_3}\right) + p_2 \left(-\frac{p_1}{p_3}\right) + p_3 \left(\frac{w}{p3}\right) = w 
+$$
+Os dois primeiros termos se anulam e os $p_3$ também se anulam no terceiro termo, sendo assim:
+
+$$
+w = w
+$$
+
 # Questão 5
 ## Cobb-Douglas
+
+### a)
+Para mostrar que que é homotética, deve-se provar a homogeneidade de grau 1:
+
+\begin{align}
+tu(x_1, x_2) &= u(tx_1, tx_2) \\
+&= u(K(tx_1)^\alpha (tx_2)^{1-\alpha}) \\
+&= Kt^\alpha x_1^\alpha t^{1-\alpha}x_2^{1-\alpha} \\
+&= tKx_1^\alpha x_2^{1-\alpha}
+\end{align}
+
+### b)
+
+Para encontrar a demanda Walrasiana, ou seja, em função de $p$ e de $w$, devemos
+maximizar a função sujeita à restrição orçamentária, sendo assim temos o seguinte lagrangeano:
+
+$$
+\mathcal{L} = Kx_1^\alpha x_2^{1-\alpha} + \lambda(w - p_1x_1 - p_2x_2)
+$$ {#eq-lagrcd}
+
+Sendo assim, temos as seguintes condições de primeira ordem:
+
+$$
+\pdv{\Lagr}{x_1} = \alpha Kx_1^{\alpha-1}x_2^{1-\alpha} - \lambda p_1 = 0
+$$ {#eq-dvx1cb}
+
+$$
+\pdv{\Lagr}{x_2} = (1-\alpha)Kx_1^\alpha x_2^{-\alpha} - \lambda p_2 = 0
+$$ {#eq-dvx2cb}
+
+$$
+\pdv{\Lagr}{\lambda} = w - p_1x_1 - p_2x_2 = 0
+$$ {#eq-dvwcb}
+
+Isolando $\lambda$ e substituindo dentro de @eq-dvx1cb, temos que:
+
 
 ## CES
 
