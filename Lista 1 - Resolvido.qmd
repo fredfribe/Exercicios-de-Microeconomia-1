@@ -4,17 +4,72 @@ author: "Frederico Fonseca Ribeiro"
 format: pdf
 ---
 
-
 # Questão 1
-# a) 
+
+# Questão 2
+## a) 
 $$
 UMg_1 = \frac{\partial u}{\partial x_1} = x_2
 $$
 De forma semelhante, , encontramos a utilidade maginal de $x_2$ e temos que a $TMgS = \frac{UMg_1}{UMg_2} = \frac{x_2}{x_1}$
 
-# Questão 2
+## b)
+
+De forma semelhante, temos que:
+$$
+TMgS = \frac{2 x_1 x^2}{2 x_1^2 x_2}
+$$
+
+## c) 
+$$
+TMgS = \frac{1/x_1}{1/x_2}
+$$
 
 # Questão 3
+
+## a)
+Demonstrando homogeneidade de grau zero:
+
+
+\begin{align}
+x_1(p,w) &= x(kp, kw) \\
+\left( \frac{2w}{2p_1 + p_2} \right) &= \left( \frac{k2w}{k2p_1 + kp_2} \right) \\
+&= \left( \frac{k(ww)}{k(2p_1 + p_2)} \right) \\
+&= \left( \frac{2w}{2p_1 + p_2} \right)
+\end{align}
+
+Demonstrando Lei de Walras:
+
+\begin{align}
+px &= w \\
+p_1x_1 + p_2x_2 &= w \\
+p_1 \left(\frac{2w}{2p_1 + p_2} \right) + p_2 \left(\frac{w}{2p_1 + p_2} \right) &= w \\
+w \left(\frac{2p_1 + p_2}{2p_1 + p_2}\right) &= w \\
+w &= w
+\end{align}
+
+# b) 
+
+Demonstrando grau de homogeneidade 0 para $x_1$, sendo os outros casos análogos:
+
+\begin{align}
+x_1(p,w) &= x(kp, kw) \\
+\left(\frac{p_2w}{(p_1+p_2+p_3)p_1}\right) &= \left(\frac{kp_2kw}{(kp_1+kp_2+kp_3)kp_1}\right) \\
+&= \left(\frac{k^2p_2w}{k^2(p_1+p_2+p_3)p_1}\right) \\
+&= \left(\frac{p_2w}{(p_1+p_2+p_3)p_1}\right)
+\end{align}
+
+Demonstrando Lei de Walras
+
+\begin{align}
+w &= px \\
+ &=  p_1 \left(\frac{p_2w}{(p_1+p_2+p_3)p_1}\right) + p_2\left(\frac{p_3w}{(p_1+p_2+p_3)p_2}\right) +
+p_3 \left(\frac{\beta p_1w}{(p_1+p_2+p_3)p_3}\right) \\
+&= \left(\frac{p_2w + p_3w + \beta p_1w}{p_1 + p_2 + p_3}\right) \\
+&= \frac{w(\beta p_1 + p_2 +  p_3)}{p_1 + p_2 +  p_3} \\
+&= w \textnormal{, se $\beta$ = 1}
+\end{align}
+
 
 # Questão 4
 
