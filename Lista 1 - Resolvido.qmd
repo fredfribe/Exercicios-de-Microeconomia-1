@@ -135,6 +135,49 @@ $$ {#eq-dvwcb}
 
 Isolando $\lambda$ e substituindo dentro de @eq-dvx1cb, temos que:
 
+$$
+K\alpha x_1^{\alpha -1}x_2^{1-\alpha} = p_1 \left(\frac{(1-\alpha)Kx_1^\alpha x_2^{-\alpha}}{p_2}  \right)
+$$
+Podemos eliminar $K$ dos dois lados. Além disso, para isolar $x_2$, dividimos 
+ambos os lados por $x_1^{\alpha -1}$ e multiplicamos por $x_2^{\alpha}$, restando:
+
+$$
+x_2 = \frac{p_1}{p_2}\frac{(1-\alpha)}{\alpha}x_1
+$$ {#eq-dmx2}
+
+Substituindo na @eq-dvwcb, temos que:
+
+$$
+w - p_1x_1 - p_2\left( \frac{p_1}{p_2}\frac{(1-\alpha)}{\alpha}x_1\right) 
+$$
+
+$$
+p_1x_1 + \left( p_1\frac{(1-\alpha)}{\alpha}x_1\right)=   w
+$$
+$$
+p_1x_1 \left(1 + \frac{(1-\alpha)}{\alpha}  \right) = w
+$$
+$$
+p_1x_1 \frac{1}{\alpha}   = w
+$$
+E chegamos à demanda Walrasiana de $x_1$:
+
+$$
+x_1^*(p,w) = \frac{w \alpha}{p_1}
+$$ {#eq-dmwx1}
+
+Similarmente, encontramos $x_2^*(p,w)$:
+
+$$
+x_2^*(p,w) = \frac{w (1-\alpha)}{p_2}
+$$ {#eq-dmwx2}
+
+### c)
+
+Para encontrarmos a função de utilidade indireta, precisamos substituir a demanda
+Walrasiana dentro da função utulidade:
+
+
 
 ## CES
 
