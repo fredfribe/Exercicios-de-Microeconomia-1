@@ -175,9 +175,71 @@ $$ {#eq-dmwx2}
 ### c)
 
 Para encontrarmos a função de utilidade indireta, precisamos substituir a demanda
-Walrasiana dentro da função utulidade:
+Walrasiana dentro da função utilidade:
+
+$$
+v(p, w) =   Kw\left(\frac{w\alpha}{p_1}  \right)^\alpha \left(\frac{w(1-\alpha)}{p_2}  \right)^{1-\alpha}
+$$
 
 
+
+### d)
+
+### e)
+Para acharmos a demanda Hicksiana, devemos minimizar o gasto em função da utilidade, 
+sendo assim, temos:
+
+$$
+\mathcal{L} = p_1x_1 + p_2x_2 + \lambda(u - Kx_1^\alpha x_2^{-\alpha})
+$$
+Condições de primeira ordem:
+
+$$
+\pdv{\Lagr}{x_1} = p_1 + \lambda K\alpha x_1^{\alpha-1}x_2^{1-\alpha} = 0
+$$ {#eq-dvhx1cb}
+$$
+\pdv{\Lagr}{x_2} = p_2 + \lambda K(1-\alpha) x_1^{\alpha}x_2^{-\alpha} = 0
+$$ {#eq-dvhx2cb}
+$$
+\pdv{\Lagr}{\lambda} = u - Kx_1^\alpha x_2^{-\alpha}) = 0
+$$ {#eq-dvhlcb}
+
+Isolando $\lambda$ na @eq-dvhx2cb e substituindo na @eq-dvhx1cb, temos:
+
+$$
+p_1 - \frac{p_2hK\alpha x_1^{\alpha-1}x_2^{1-\alpha}}{K(1-\alpha) x_1^{\alpha}x_2^{-\alpha}} =
+p_1 - \frac{p_2\alpha x_1^{-1}x_2^1}{(1-\alpha)} = 0
+$$
+Isolando $x_2$:
+
+$$
+x_2 = \frac{p_1}{p_2}\frac{(1-\alpha)}{\alpha}x_1
+$$ {#eq-dmx2hcb}
+
+Substituindo a @eq-dmx2hcb na @eq-dvhlcb:
+
+$$
+u - Kx_1^\alpha\left(\frac{p_1}{p_2}\frac{1-\alpha}{\alpha}x_1\right)^{1-\alpha} = 0
+$$
+Isolando $x_1$:
+
+$$
+x_1 = \frac{u}{K}\left(\frac{p_2}{p_1}\frac{\alpha}{1-\alpha}\right)^{1-\alpha} = h_1^*(p,u)
+$$ {#eq-dhh1cb}
+Semelhantemente, encontra-se $h_2^* =  \frac{u}{K}\left(\frac{p_1}{p_2}\frac{1-\alpha}{\alpha}\right)^{\alpha}$
+
+### f)
+
+Para achar a função dispêndio, basta substituir a demanda Hicksiana dentro:
+
+\begin{align}
+e(p, u) &= p_1 \frac{u}{K} \left[ \frac{\alpha}{1 - \alpha}   \frac{p_2}{p_1} \right]^{1 - \alpha} 
++ p_2   \frac{u}{K} \left[ \frac{1 - \alpha}{\alpha}   \frac{p_1}{p_2} \right]^{\alpha} \\
+&= \frac{u}{K} p_1^{\alpha} p_2^{1 - \alpha} 
+\left[ \frac{\alpha^{1 - \alpha}}{(1 - \alpha)^{1 - \alpha}} + \frac{(1 - \alpha)^{\alpha}}{\alpha^{\alpha}} \right] \\
+&= \frac{u}{K} p_1^{\alpha} p_2^{1 - \alpha} 
+\left[ \alpha^{-\alpha} (1 - \alpha)^{-(1 - \alpha)} \right]
+\end{align}
 
 ## CES
 
