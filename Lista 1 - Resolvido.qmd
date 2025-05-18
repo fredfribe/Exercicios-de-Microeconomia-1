@@ -241,16 +241,121 @@ e(p, u) &= p_1 \frac{u}{K} \left[ \frac{\alpha}{1 - \alpha}   \frac{p_2}{p_1} \r
 \left[ \alpha^{-\alpha} (1 - \alpha)^{-(1 - \alpha)} \right]
 \end{align}
 
+
+### g)
+
+Aplicando o Lema de Shephard, basta derivar a função dispêndio em relação ao preço:
+
+
+$$
+\frac{\partial e(p,u)}{\partial p_1} = \frac{u}{K}\left(\frac{p_2}{p_1}\frac{\alpha}{1-\alpha}\right)^{1-\alpha} = h_1^*(p,u)
+$$
+Nota: o expoente $\alpha$ que desce multiplicando ajuda na simplificação ao evidenciar o 
+expoente dos parênteses dos termos à direita.
+
+## h)
+
+Para encontrar os efeitos Renda, Substituição e Total, devemos usar a Equação de 
+Slutsky.
+
 ## CES
 
 
 
 # Questão 6
 
+Podemos definir a renda real como $R = w - p_0x$. A partir da @eq-dmwx1, temos que:
+
+$$
+x-x_0 = \frac{R\alpha}{p_x} =\frac{( w - px_0)\alpha}{p_x}
+$$
+Ou seja, como se gasta primeiro com $x_0$, há uma redução da reta orçamentária real.
+
 # Questão 7
 
+## a)
+Para resolver a questão, devemos utilizar a Identidade de Roy, sendo assim:
+
+$$
+x_1^*(p,w) = -\frac{-\alpha/p_1}{(\alpha + \beta)/w} = \frac{\alpha}{(\alpha+\beta)}\frac{w}{p_1}
+$$
+Similarmente, para $x_2$: 
+
+$$
+x_2^*(p,w) =  \frac{\beta}{(\alpha+\beta)}\frac{w}{p_2}
+$$
+
+## b)
+
+Para encontrar a função dispêndio, basta isolar $w$:
+
+$$
+\ln w = \frac{\alpha\ln p_1 + \beta\ln p_2 -K+u}{(\alpha + \beta)}
+$$
+Usando propriedades logarítimicas e depois usando função exponencial, tem-se que:
+
+$$
+e(p, u) = e^{\frac{u - K}{\alpha + \beta}} p_1^{\frac{\alpha}{\alpha + \beta}} p_2^{\frac{\beta}{\alpha + \beta}}
+$$
+Para chegar à Demanda Hicksiana, aplica-se o Lema de Shephard, que é 
+a derivação da função dispêndio pelo preço:
+
+$$
+h_1(p, u) = \frac{\alpha}{\alpha + \beta} \, e^{\frac{u - K}{\alpha + \beta}} \left( \frac{p_2}{p_1} \right)^{\frac{\beta}{\alpha + \beta}}
+$$
+Semelhantemente, para o outro bem:
+
+$$
+h_2(p, u) = \frac{\beta}{\alpha + \beta} \, e^{\frac{u - K}{\alpha + \beta}} \left( \frac{p_1}{p_2} \right)^{\frac{\alpha}{\alpha + \beta}}
+$$
 # Questão 8
 
+Para esta questão, considere $\alpha = 1/2$
+
+Logo, a fim de maximizar a utilidade dada uma restrição orçamentária, temos as seguintes CPOs:
+
+$$
+\alpha x_1^{\alpha-1} + \lambda p_1 = 0
+$$
+$$
+(1-\alpha) x_2^{-\alpha} + \lambda p_2 = 0
+$$
+$$
+w - p_1x_1 - p_2x_2 = 0
+$$
+Igualando as equações, temos que:
+
+$$
+\frac{(1-\alpha) x_2^{-\alpha}}{p_2} = \frac{\alpha x_1^{\alpha-1}}{p_1}
+$$
+Isolando:
+
+$$
+x_2^\alpha = \frac{p_1}{p_2}\frac{\alpha}{(1-\alpha)}x_1^{\alpha-1}
+$$
+$$
+x_2 = \left(\frac{p_1}{p_2}\frac{\alpha}{(1-\alpha)x_1^{1-\alpha}}\right)^\frac{1}{\alpha}
+$$
+Reduzindo ao substituir $\alpha$:
+
+$$
+x_2 = \left(\frac{p_1}{p_2}\right)^2x_1
+$$
+Substituindo na restrição orçamentária:
+
+$$
+w = p_1x_1 + p_2\left(\frac{p_1}{p_2}\right)^2x_1
+$$
+$$
+x_1^* = \frac{w}{p_1+\frac{p_1^2}{p_2}}
+$$
+$$
+x_1^* = \frac{p_2w}{p_1p_2+p_1^2}
+$$
+Similarmente:
+$$
+x_2^* = \frac{p_1w}{p_1p_2+p_2^2}
+$$
 # Questão 9
 
 # Questão 10
