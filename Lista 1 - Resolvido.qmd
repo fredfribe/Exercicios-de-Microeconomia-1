@@ -182,6 +182,21 @@ $$
 x_2^*(p,w) = \frac{w (1-\alpha)}{p_2}
 $$ {#eq-dmwx2}
 
+Verificando propriedades:
+
+
+Homogeneidade de Grau Zero:
+$$
+    x_1^*(\lambda p, \lambda w) = \alpha \frac{\lambda w}{\lambda p_1} = \alpha \frac{w}{p_1} = x_1^*(p, w)
+\qquad
+    x_2^*(\lambda p, \lambda w) = (1 - \alpha) \frac{\lambda w}{\lambda p_2} = (1 - \alpha) \frac{w}{p_2} = x_2^*(p, w)
+$$
+
+Lei de Walras:
+$$
+    p_1 x_1^*(p, w) + p_2 x_2^*(p, w) = p_1 \left( \alpha \frac{w}{p_1} \right) + p_2 \left( (1 - \alpha) \frac{w}{p_2} \right) = w
+$$
+
 ### c)
 
 Para encontrarmos a função de utilidade indireta, precisamos substituir a demanda
@@ -191,9 +206,42 @@ $$
 v(p, w) =   Kw\left(\frac{w\alpha}{p_1}  \right)^\alpha \left(\frac{w(1-\alpha)}{p_2}  \right)^{1-\alpha}
 $$
 
+Proriedades:
 
+Homogeneidade de Grau Zero
+
+$$
+v(\lambda p, \lambda w) = K(\lambda w) \left[ \frac{\alpha}{\lambda p_1} \right]^{\alpha} \left[ \frac{(1 - \alpha)}{\lambda p_2} \right]^{1 - \alpha} = v(p, w)
+$$
+
+Estritamente crescente na renda e não decrescente nos preços
+
+$$
+  \frac{\partial v(p,w)}{\partial w} = K \left[ \frac{\alpha}{p_1} \right]^{\alpha} \left[ \frac{(1 - \alpha)}{p_2} \right]^{1 - \alpha} > 0
+$$
+$$
+    \frac{\partial v(p,w)}{\partial p_1} = -\alpha K w p_1^{-\alpha - 1} p_2^{\alpha - 1} \alpha^{\alpha} (1 - \alpha)^{1 - \alpha} < 0
+$$
+$$
+\frac{\partial v(p,w)}{\partial p_2} = ( \alpha - 1) K w p_1^{-\alpha} p_2^{\alpha - 2} \alpha^{\alpha} (1 - \alpha)^{1 - \alpha} < 0
+$$
 
 ### d)
+
+$$
+x_1^*(p, w) = - \frac{-\alpha K w \left( \frac{\alpha}{p_1} \right)^\alpha \left( \frac{1 - \alpha}{p_2} \right)^{1 - \alpha} \cdot \frac{1}{p_1}}{K \left( \frac{\alpha}{p_1} \right)^\alpha \left( \frac{1 - \alpha}{p_2} \right)^{1 - \alpha}}
+$$
+
+$$
+x_1^*(p, w) = \frac{\alpha w}{p_1}
+$$
+
+Semelhantemente:
+
+$$
+x_2^*(p, w) = \frac{(1 - \alpha) w}{p_2}
+$$
+
 
 ### e)
 Para acharmos a demanda Hicksiana, devemos minimizar o gasto em função da utilidade, 
@@ -238,6 +286,24 @@ x_1 = \frac{u}{K}\left(\frac{p_2}{p_1}\frac{\alpha}{1-\alpha}\right)^{1-\alpha} 
 $$ {#eq-dhh1cb}
 Semelhantemente, encontra-se $h_2^* =  \frac{u}{K}\left(\frac{p_1}{p_2}\frac{1-\alpha}{\alpha}\right)^{\alpha}$
 
+Propriedades:
+
+Homogeneidade de Grau Zero
+
+$$
+ h_1^*(\lambda p, u) = \frac{u}{K} \left[ \frac{\alpha}{1 - \alpha} \cdot \frac{\lambda p_2}{\lambda p_1} \right]^{1 - \alpha} = h_1^*(p, u)
+$$
+$$
+h_2^*(\lambda p, u) = \frac{u}{K} \left[ \frac{1 - \alpha}{\alpha} \cdot \frac{\lambda p_1}{\lambda p_2} \right]^{\alpha} = h_2^*(p, u)
+$$
+Sem excesso de utilidade:
+
+$$
+u(h(p, u)) = K \left[ \frac{u}{K} \left( \frac{\alpha}{1 - \alpha} \cdot \frac{p_2}{p_1} \right)^{1 - \alpha} \right]^\alpha
+    \left[ \frac{u}{K} \left( \frac{1 - \alpha}{\alpha} \cdot \frac{p_1}{p_2} \right)^{\alpha} \right]^{1 - \alpha} = u
+$$
+
+
 ### f)
 
 Para achar a função dispêndio, basta substituir a demanda Hicksiana dentro:
@@ -251,6 +317,25 @@ e(p, u) &= p_1 \frac{u}{K} \left[ \frac{\alpha}{1 - \alpha}   \frac{p_2}{p_1} \r
 \left[ \alpha^{-\alpha} (1 - \alpha)^{-(1 - \alpha)} \right]
 \end{align}
 
+Propriedades:
+
+Homogeneidade de Grau 1 em p:
+
+$$
+ e(\lambda p, u) = \frac{u}{K} \lambda^{\alpha} p_1^{\alpha} \lambda^{1 - \alpha} p_2^{1 - \alpha} \left[ \alpha^{-\alpha} (1 - \alpha)^{-(1 - \alpha)} \right] = \lambda e(p, u)
+$$
+
+Estritamente crescente na utilidade e não decrescente nos preço:
+
+$$
+\frac{\partial e(p,u)}{\partial u} = \frac{1}{K} p_1^{\alpha} p_2^{1 - \alpha} \left[ \alpha^{-\alpha} (1 - \alpha)^{-(1 - \alpha)} \right] > 0
+$$
+$$
+\frac{\partial e(p,u)}{\partial p_1} = \frac{u}{K} \alpha p_1^{\alpha - 1} p_2^{1 - \alpha} \left[ \alpha^{-\alpha} (1 - \alpha)^{-(1 - \alpha)} \right] > 0
+$$
+$$
+\frac{\partial e(p,u)}{\partial p_2} = \frac{u}{K} (1 - \alpha) p_1^{\alpha} p_2^{-\alpha} \left[ \alpha^{-\alpha} (1 - \alpha)^{-(1 - \alpha)} \right] > 0
+$$
 
 ### g)
 
@@ -686,8 +771,87 @@ $$
 C(w_k, w_l, q) = w_lq\left(\frac{1 - \alpha}{\alpha}  \frac{w_k}{w_l}\right)^{\alpha}\cdot 
 w_kq\left(\frac{\alpha}{1 - \alpha}  \frac{w_l}{w_k}\right)^{1-\alpha}
 $$
+Para a oferta e lucro, tem-se:
+
+$$
+q =
+\begin{cases}
+0, & \text{se } p < CMg \\
+\in \mathbb{R}, & \text{se } p = CMg \\
+\infty, & \text{se } p > CMg
+\end{cases}
+\quad
+\pi =
+\begin{cases}
+0, & \text{se } p \leq CMg \\
+\infty, & \text{se } p > CMg
+\end{cases}
+$$
+
+## b)
+
+Como é uma função de produção de Leontief, tem-se que
+
+$$
+k = l = q
+$$
+A função custo então se dá pela soma dos preços dos insumos, vezes a quantidade produzida:
+
+$$
+c(w_l,w_k,q) = q(w_l+w_k)
+$$
+Sendo assim, a quantidade ofertada e o lucro se dão por:
+
+$$
+q =
+\begin{cases}
+0, & \text{se } p < v + w \\
+\in \mathbb{R}, & \text{se } p = v + w \\
+\infty, & \text{se } p > v + w
+\end{cases}
+\qquad
+\pi =
+\begin{cases}
+0, & \text{se } p \leq v + w \\
+\infty, & \text{se } p > v + w
+\end{cases}
+$$
+
+## c)
+
+Similarmente ao Cobb-Douglas, a oferta e lucro se dão por:
+
+$$
+q =
+\begin{cases}
+0, & \text{se } p < CMg \\
+\in \mathbb{R}, & \text{se } p = CMg \\
+\infty, & \text{se } p > CMg
+\end{cases}
+\quad
+\pi =
+\begin{cases}
+0, & \text{se } p \leq CMg \\
+\infty, & \text{se } p > CMg
+\end{cases}
+$$
+
 
 # Questão 15
 
+Como os custos de $x_3$ e $x_4$ são maiores que dos outros insumos, não há necessidade de
+ demandálos. 
+ 
+ Sendo assim, $x_1 = x_2$, pois vira um problema de Leontief clássico.
+ 
+## b) 
 
+Função Custo:
+ 
+ $$
+ q\min{[w_1+w_2,w_3+w_4]}
+ $$
 
+## c) 
+
+Retornos constantes, pois, dobrando os insumos, temos o dobro da produção.
