@@ -568,6 +568,9 @@ Para um bem cujo preço aumenta, há uma redução conforme os 2 efeitos, grafic
 Contudo, para o um bem de Giffen, caso o Efeito Renda seja grande o suficiente, ele 
 irá aumentar a demanda walrasiana do bem, mesmo que o preço aumente.
 
+![](9bb.png)
+Já para um efeito de diminuição dos preços, temos o efeito acima. A cesta ótima possui 
+mais utilidade e quantidade. 
 
 # Questão 10
 
