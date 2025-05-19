@@ -65,7 +65,7 @@ w \left(\frac{2p_1 + p_2}{2p_1 + p_2}\right) &= w \\
 w &= w
 \end{align}
 
-# b) 
+## b) 
 
 Demonstrando grau de homogeneidade 0 para $x_1$, sendo os outros casos análogos:
 
@@ -610,7 +610,82 @@ A frase é falsa. Conforme as questões anteriores, a depender de qual aversão,
 
 # Questão 13
 
+## a)
+
+$$
+\frac{\partial q}{\partial k}= \frac{1}{\rho}(k^\rho+l^\rho)^{\frac{1}{\rho}-1}\rho k^{\rho-1}
+$$
+Cortando $\rho$ e fazendo manipulação, substituindo a função de produção por $q$:
+
+$$
+PM_g^k = \left(\frac{q}{k}\right)^{1-\rho}
+$$
+Analogamente:
+
+$$
+PM_g^l = \left(\frac{q}{l}\right)^{1-\rho}
+$$
+
+
+
+## b)
+
+
+Para achar a $TMgST$, basta dividir $PM_g^l$ por $PM_g^k$
+
+$$
+TMgST = \frac{\left(\frac{q}{l}\right)^{1-\rho}}{\left(\frac{q}{k}\right)^{1-\rho}} = 
+\left(\frac{k}{l}\right)^{1-\rho}
+$$
+
+Para provar $\sigma$, devemos aplicar $ln$ e depois derivar:
+
+$$
+\sigma = \frac{\ln{(k/l)}}{(1-\rho)\ln{(k/l)}} = \frac{1}{(1-\rho)}
+$$
+
+
 # Questão 14
+
+
+Formando o lagrangeano, minimizando a função custo dada a função produção:
+$$
+\mathcal{L} = w_k k + w_l l + \lambda \left(q - k^\alpha l^{1 - \alpha} \right)
+$$
+Sendo assim, temos as seguintes CPOs:
+
+$$
+\frac{\partial \mathcal{L}}{\partial k} = w_k - \lambda \alpha k^{\alpha - 1} l^{1 - \alpha} = 0
+$$
+$$
+\frac{\partial \mathcal{L}}{\partial l} = w_l - \lambda (1 - \alpha) k^{\alpha} l^{-\alpha} = 0
+$$
+$$
+\frac{w_k}{w_l} = \frac{\alpha}{1 - \alpha}  \frac{l}{k}
+ \Rightarrow  l = \frac{1 - \alpha}{\alpha}  \frac{w_k}{w_l}k
+$$
+
+Substituindo na restrição de produção, temos:
+
+$$
+q = k^\alpha\left(\frac{1 - \alpha}{\alpha}  \frac{w_k}{w_l}k\right)^{1-\alpha}
+$$
+Isolando $k$:
+
+$$
+k^* = q\left(\frac{\alpha}{1 - \alpha}  \frac{w_l}{w_k}\right)^{1-\alpha}
+$$
+Semelhantemente, para $l$:
+
+$$
+l^* = q\left(\frac{1 - \alpha}{\alpha}  \frac{w_k}{w_l}\right)^{\alpha}
+$$
+Função custo:
+
+$$
+C(w_k, w_l, q) = w_lq\left(\frac{1 - \alpha}{\alpha}  \frac{w_k}{w_l}\right)^{\alpha}\cdot 
+w_kq\left(\frac{\alpha}{1 - \alpha}  \frac{w_l}{w_k}\right)^{1-\alpha}
+$$
 
 # Questão 15
 
