@@ -562,6 +562,13 @@ Ao aumentar o preço, há o efeito substituição e o efeito renda. O de substit
 se refere ao aumento da demanda de outro bem, vide a relação cruzada de demanda e preço. 
 Já o efeito renda, se refere ao impacto do preço na renda real. 
 
+Para um bem cujo preço aumenta, há uma redução conforme os 2 efeitos, graficamente:
+
+![](9ba.png){fig-align="center"}
+Contudo, para o um bem de Giffen, caso o Efeito Renda seja grande o suficiente, ele 
+irá aumentar a demanda walrasiana do bem, mesmo que o preço aumente.
+
+
 # Questão 10
 
 O resultado esperado de cada loteria se dá por:
