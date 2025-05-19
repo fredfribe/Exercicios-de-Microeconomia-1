@@ -748,6 +748,7 @@ $$
 
 # Questão 14
 
+## a)
 
 Formando o lagrangeano, minimizando a função custo dada a função produção:
 $$
@@ -854,6 +855,9 @@ $$
 
 
 # Questão 15
+
+## a)
+
 
 Como os custos de $x_3$ e $x_4$ são maiores que dos outros insumos, não há necessidade de
  demandálos. 
