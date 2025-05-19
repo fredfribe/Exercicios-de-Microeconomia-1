@@ -353,6 +353,22 @@ expoente dos parênteses dos termos à direita.
 Para encontrar os efeitos Renda, Substituição e Total, devemos usar a Equação de 
 Slutsky.
 
+Efeito Total:
+$$
+\frac{\partial x_1}{\partial p_1} = -\alpha \frac{w}{p_1^2}
+$$
+Efeito Renda:
+
+$$
+\frac{\partial x_1}{\partial w}  x_1 = \frac{\alpha}{p_1}  \left( \alpha  \frac{w}{p_1} \right) = \alpha^2 \frac{w}{p_1^2}
+$$
+
+Efeito Substituição:
+
+$$
+\frac{\partial h_1}{\partial p_1} = -\alpha(1 - \alpha)\frac{w}{p_1^2}
+$$
+
 ## CES
 
 
