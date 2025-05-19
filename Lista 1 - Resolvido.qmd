@@ -554,9 +554,59 @@ $$
 $$
 $$
 \pi = \frac{\sqrt{26} - 5}{2}
+$$
+
+O valor que faz o indivíduo ficar indiferente é maior no segundo caso.
+
+
+# Questão 12 
+
+## a)
+![Gráfico de utilidade](q12.png){fig-align="center"}
+Pelo gráfico é possível perceber que a função é fracamente côncava, sendo assim, ele é 
+fracamento averso ao risco. É possível traçar uma linha entre dois pontos cujo valor médio 
+é preferível aos extremos.
+
+## b)
 
 $$
-# Questão 12 
+\mathbb{E}(u)_1 = \frac{2+ 7,5+11,5}{3} = 7
+$$
+$$
+\mathbb{E}(u)_2 = \frac{4+ 5,5+12,5}{3} = 7,33333
+$$
+Ativo 2 é preferível.
+
+## c)
+
+Ativo 1:
+
+$$
+\mathbb{E^2}(x) = \left(\frac{1+5+9}{3}\right)^2=25
+$$
+$$
+\mathbb{E}(x^2) = \frac{1+25+81}{3} = \frac{107}{3}
+$$
+$$
+V(x) =\frac{107}{3} - 25 = \frac{32}{3}
+$$
+Ativo 2:
+
+$$
+\mathbb{E^2}(y) = \left(\frac{2+3+10}{3}\right)^2=25
+$$
+
+$$
+\mathbb{E}(y^2) = \frac{4+9+100}{9} = \frac{113}{3}
+$$
+$$
+V(y) = \frac{38}{3}
+$$
+O avesso prefere x, menor variância
+
+## d)
+
+A frase é falsa. Conforme as questões anteriores, a depender de qual aversão, o resultado diverge.
 
 # Questão 13
 
